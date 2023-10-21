@@ -13,13 +13,15 @@ variable "key_name" {
 variable "volume_size" {
   description = "The volume size"
   type        = string
-  default     = ""
+  default     = "30"
 }
 variable "volume_type" {
   description = "The volume type"
-  default     = ""
+  type        = string
+  default     = "gp3"
 }
 variable "volume_delete_on_termination" {
   description = "The volume delete on termination"
-  default     = ""
+  type        = bool
+  default     = true
 }
